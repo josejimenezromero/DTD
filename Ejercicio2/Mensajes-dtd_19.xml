@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mensajes [
-<!ELEMENT mensajes (mensaje)>
-<!ELEMENT mensaje* (de, para, hora, texto) >
+<!ELEMENT mensajes (mensaje*)>
+<!ELEMENT mensaje (de, para, hora, texto)>
 <!ELEMENT de (#PCDATA)>
 <!ELEMENT para (#PCDATA)>
 <!ELEMENT hora (#PCDATA)>
 <!ELEMENT texto (#PCDATA|strong)*>
-<!ELEMENT strong (#PCDATA)
+<!ELEMENT strong (#PCDATA)>
 ]>
 <mensajes>
 <mensaje>
@@ -25,4 +25,4 @@
 
 <!--José Jiménez Romero-->
 
-<!--Hedeclarado en el dtd la etiqueta mensaje que puede haber mas de una, con sus respectivos hijos y además en la etiqueta texto lleva como hijo la etiqueta strong-->
+<!--Hedeclarado en el dtd la etiqueta mensaje que puede haber mas de una, con sus respectivos hijos y además en la etiqueta texto lleva como hijo la etiqueta strong que se puede repetir mas de una vez-->

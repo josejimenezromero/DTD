@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE marcadores [
-<!ELEMENT marcadores (marcador)>
+<!ELEMENT marcadores (marcador*)>
 <!ELEMENT marcador (nombre, uri)>
 <!ELEMENT nombre (#PCDATA)>
 <!ELEMENT uri (#PCDATA)>
@@ -18,4 +18,4 @@
 
 <!--José Jiménez Romero-->
 
-<!--En el dtd nos indica como elemento raiz la etiqueta favoritos pero la etiqueta raiz es marcadores-->
+<!--En el dtd nos indica como elemento raiz la etiqueta favoritos pero la etiqueta raiz es marcadores y añadir el asterisco en la etiqueta marcador para que haya varios-->
